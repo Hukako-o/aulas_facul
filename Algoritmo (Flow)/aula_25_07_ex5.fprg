@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO-Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-25 07:56:25 "/>
+        <attribute name="created" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yNTsiMDc6NDY6MjggIjs0MDYy"/>
+        <attribute name="edited" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yNTsiMDc6NTY6MjUgIjsyOzQxNjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3" type="Real" array="False" size=""/>
+            <output expression="&quot;Valor de num1: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Valor de num2: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Valor de num3: &quot;" newline="True"/>
+            <input variable="num3"/>
+            <if expression="num1 &lt;= num2 &amp;&amp; num1 &lt;= num3">
+                <then>
+                    <output expression="num1" newline="True"/>
+                    <if expression="num2 &lt;= num3">
+                        <then>
+                            <output expression="num2" newline="True"/>
+                            <output expression="num3" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="num3" newline="True"/>
+                            <output expression="num2" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="num2 &lt;= num1 &amp;&amp; num2 &lt;= num3">
+                        <then>
+                            <output expression="num2" newline="True"/>
+                            <if expression="num1 &lt;= num3">
+                                <then>
+                                    <output expression="num1" newline="True"/>
+                                    <output expression="num3" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="num3" newline="True"/>
+                                    <output expression="num1" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="num3 &lt;= num1 &amp;&amp; num3 &lt;= num2">
+                                <then>
+                                    <output expression="num3" newline="True"/>
+                                    <if expression="num1 &lt;= num2">
+                                        <then>
+                                            <output expression="num1" newline="True"/>
+                                            <output expression="num2" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="num2" newline="True"/>
+                                            <output expression="num1" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Erro inesperado!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

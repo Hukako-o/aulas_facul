@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO-Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-24 09:05:49 "/>
+        <attribute name="created" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yNDsiMDg6NTk6MTkgIjs0MDY2"/>
+        <attribute name="edited" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yNDsiMDk6MDU6NDkgIjsyOzQxNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota" type="Integer" array="False" size=""/>
+            <output expression="&quot;Valor da nota: &quot;" newline="True"/>
+            <input variable="nota"/>
+            <if expression="nota &gt;= 0 &amp;&amp; nota &lt;= 10">
+                <then>
+                    <output expression="&quot;Nota v&#225;lida! (&quot; &amp; nota &amp; &quot;)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nota inv&#225;lida (&quot; &amp; nota &amp; &quot;)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO-Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-23 10:25:42 "/>
+        <attribute name="created" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yMzsiMTA6MjE6MjEgIjs0MDQw"/>
+        <attribute name="edited" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yMzsiMTA6MjU6NDIgIjsxOzQxNTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saldo, saque" type="Real" array="False" size=""/>
+            <output expression="&quot;Valor saldo: &quot;" newline="True"/>
+            <input variable="saldo"/>
+            <output expression="&quot;Valor saque: &quot;" newline="True"/>
+            <input variable="saque"/>
+            <if expression="saldo &gt; 0 &amp;&amp; saldo &gt;= saque">
+                <then>
+                    <assign variable="saldo" expression="saldo - saque"/>
+                    <output expression="&quot;Saque efetuado!&quot;" newline="True"/>
+                    <output expression="&quot;Saldo restante: &quot; &amp; saldo" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Saldo insuficiente!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

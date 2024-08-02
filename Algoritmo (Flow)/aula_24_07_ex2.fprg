@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO-Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-24 09:11:47 "/>
+        <attribute name="created" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yNDsiMDk6MDU6NTEgIjs0MDU0"/>
+        <attribute name="edited" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yNDsiMDk6MTE6NDcgIjsxOzQxNjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temperatura" type="Integer" array="False" size=""/>
+            <output expression="&quot;Temperatura atual: &quot;" newline="True"/>
+            <input variable="temperatura"/>
+            <if expression="temperatura &lt; 18">
+                <then>
+                    <output expression="&quot;Clima FRIO!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="temperatura &gt;= 18 &amp;&amp; temperatura &lt;= 25">
+                        <then>
+                            <output expression="&quot;Clima AGRADAVEL!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="temperatura &gt; 25">
+                                <then>
+                                    <output expression="&quot;Clima QUENTE!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Erro!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

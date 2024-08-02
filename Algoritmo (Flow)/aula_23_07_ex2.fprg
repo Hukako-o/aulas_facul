@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO-Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-23 08:18:24 "/>
+        <attribute name="created" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yMzsiMDg6MTE6MjUgIjs0MDUw"/>
+        <attribute name="edited" value="QUxVTk8tQWRtaW5pc3RyYWRvcjtERVNLVE9QLTZPT1Q4VTE7MjAyNC0wNy0yMzsiMDg6MTg6MjQgIjsyOzQxNjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alunoNota, alunoFaltas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nota do Aluno: &quot;" newline="True"/>
+            <input variable="alunoNota"/>
+            <output expression="&quot;Quantidade de faltas do Aluno: &quot;" newline="True"/>
+            <input variable="alunoFaltas"/>
+            <if expression="alunoNota &gt;= 60 &amp;&amp; alunoFaltas &lt;=20">
+                <then>
+                    <output expression="&quot;Aluno aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
